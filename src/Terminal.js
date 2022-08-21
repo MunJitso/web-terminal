@@ -39,6 +39,8 @@ function commandChecker (event, input, setOutput, setInput) {
             case "uname -r" :
                 setOutput(<p>1.0.0</p>);
                 break;
+            case "whoami" :
+                setOutput(<p>root</p>)
             default :
                 setOutput(<p>use 'help' to know commands.</p>);
                 break;
@@ -76,6 +78,7 @@ function Help() {
             <p>help - Shows help menu.</p>
             <p>info - Shows MunJitso's Info.</p>
             <p>uname -r - Shows Kernel's version.</p>
+            <p>whoami - Shows current user.</p>
             <p>exit - close the website</p>
         </div>
     )
