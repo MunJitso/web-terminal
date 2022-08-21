@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Terminal from "./Terminal";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <div className="terminal">
+          <div className="hot-bar">
+            <div>
+              <p className="window-name"> Root Terminal</p>
+            </div>
+            <div className="buttons">
+              <div className="minimize"></div>
+              <div className="fullscreen"></div>
+              <div className="close"></div>
+            </div>
+          </div>
+          <div className="infos">
+              <Terminal/>
+          </div>
+        </div>
+      </div>
   );
 }
+
 
 export default App;

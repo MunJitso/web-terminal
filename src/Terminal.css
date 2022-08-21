@@ -1,0 +1,52 @@
+.App {
+    font-family: monospace, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+}
+
+.container{
+    width: 45rem;
+    text-align: left;
+    font-family: monospace, sans-serif;
+    height: 60vh;
+    background-color: #191c21;
+    color: white;
+    padding: 7px 24px;
+}
+.header{
+    border-bottom: 3px solid #dcecee;
+}
+.info-paragraph {
+    border-bottom: 3px solid #dcecee;
+}
+.header h1{
+    color: #FFF;
+    font-size: 2rem;
+    font-family: monospace, sans-serif;
+}
+.list li{
+    list-style-type: '> ';
+    margin-bottom: 5px;
+}
+.input{
+    font-size: 1rem;
+    font-family: monospace, sans-serif;
+    background-color: transparent;
+    color: white;
+    width: 75%;
+    border: 0;
+    outline: none;
+}
+.input:focus{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+}
