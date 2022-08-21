@@ -32,6 +32,7 @@ function commandChecker (event, input, setOutput, setInput) {
                 break;
             case "exit" :
                 window.close();
+            // eslint-disable-next-line no-fallthrough
             default :
                 setOutput(<><p>use 'help' to know commands.</p>
                 </>);
