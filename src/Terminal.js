@@ -25,17 +25,22 @@ function commandChecker (event, input, setOutput, setInput) {
         setOutput("");
         switch (input) {
             case "info" :
-                setOutput(<><Info/></>);
+                setOutput(<Info/>);
                 break;
             case "clear" :
                 setOutput("");
                 break;
             case "exit" :
                 window.close();
-            // eslint-disable-next-line no-fallthrough
+                break;
+            case "help" :
+                setOutput(<Help/>);
+                break;
+            case "uname -r" :
+                setOutput(<p>1.0.0</p>);
+                break;
             default :
-                setOutput(<><p>use 'help' to know commands.</p>
-                </>);
+                setOutput(<p>use 'help' to know commands.</p>);
                 break;
         }
         setInput("");
@@ -65,6 +70,17 @@ function Info() {
         </div>
     )
 }
+function Help() {
+    return (
+        <div>
+            <p>help - Shows help menu.</p>
+            <p>info - Shows MunJitso's Info.</p>
+            <p>uname -r - Shows Kernel's version.</p>
+            <p>exit - close the website</p>
+        </div>
+    )
+}
+
 
 function Terminal() {
     return (
